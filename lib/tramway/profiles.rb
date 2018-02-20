@@ -1,7 +1,16 @@
 require "tramway/profiles/engine"
+require 'tramway/profiles/generates/install_generator'
 
 module Tramway
   module Profiles
-    # Your code goes here...
+    class << self
+      def records=(models)
+        @records = models
+      end
+
+      def records
+        @records
+      end
+    end
   end
 end
