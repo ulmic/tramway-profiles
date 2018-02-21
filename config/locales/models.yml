@@ -1,0 +1,15 @@
+ru:
+  activerecord:
+    models:
+      tramway/profiles/social_network: Социальная сеть
+    attributes:
+      tramway/profiles/social_network:
+        title: Имя профиля
+        network_name: Социальная сеть
+        record_id: ID записи
+        record_type: Тип записи
+        uid: Имя пользователя
+  cases:
+    tramway/profiles/social_network:
+      plural: социальные сети
+      genitive: социальную сеть
