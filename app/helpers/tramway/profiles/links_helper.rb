@@ -17,6 +17,10 @@ module Tramway::Profiles::LinksHelper
     profile_link_template title, "https://twitter.com/#{uid}", :twitter
   end
 
+  def instagram(uid, title)
+    profile_link_template title, "https://instagram.com/#{uid}", :instagram
+  end
+
   def profile_link_template(title, link, icon)
     link_to link, target: '_blank' do
       concat fa_icon icon
