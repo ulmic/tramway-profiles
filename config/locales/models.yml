@@ -4,11 +4,11 @@ ru:
       tramway/profiles/social_network: Социальная сеть
     attributes:
       tramway/profiles/social_network:
-        title: Имя профиля
+        title: Название ссылки
         network_name: Социальная сеть
         record_id: ID записи
         record_type: Тип записи
-        uid: Имя пользователя
+        uid: Username в социальной сети
   cases:
     tramway/profiles/social_network:
       plural: социальные сети
