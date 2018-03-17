@@ -1,27 +1,27 @@
 module Tramway::Profiles::LinksHelper
   def profile_link(profile)
-    send profile.network_name, profile.uid
+    send profile.network_name, profile.uid, profile.title
   end
 
   private
 
-  def vk(uid)
-    profile_link_template uid, "https://vk.com/#{uid}", :vk
+  def vk(uid, title)
+    profile_link_template title, "https://vk.com/#{uid}", :vk
   end
 
-  def facebook(uid)
-    profile_link_template uid, "https://facebook.com/#{uid}", :facebook
+  def facebook(uid, title)
+    profile_link_template title, "https://facebook.com/#{uid}", :facebook
   end
 
-  def twitter(uid)
-    profile_link_template uid, "https://twitter.com/#{uid}", :twitter
+  def twitter(uid, title)
+    profile_link_template title, "https://twitter.com/#{uid}", :twitter
   end
 
-  def profile_link_template(uid, link, icon)
+  def profile_link_template(title, link, icon)
     link_to link, target: '_blank' do
       concat fa_icon icon
       concat ' '
-      concat uid
+      concat title 
     end
   end
 end
