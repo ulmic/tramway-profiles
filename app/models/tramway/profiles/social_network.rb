@@ -3,4 +3,5 @@ class Tramway::Profiles::SocialNetwork < ::Tramway::Core::ApplicationRecord
 
   enumerize :network_name, in: [ :vk, :facebook, :twitter ]
   #enumerize :record_type, in: ::Tramway::Profiles.records
+  enumerize :record_type, in: [ 'Tramway::SportSchool::Institution' ], default: 'Tramway::SportSchool::Institution'
 end
